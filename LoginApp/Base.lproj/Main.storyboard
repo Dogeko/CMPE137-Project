@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,7 +46,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="zwY-YH-vBc" kind="show" id="Hbw-Pf-KlR"/>
+                        <segue destination="zwY-YH-vBc" kind="show" identifier="goHome" id="Hbw-Pf-KlR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -67,7 +67,7 @@
                                 <connections>
                                     <action selector="TapLogOff:" destination="qsi-G0-Q44" eventType="touchUpInside" id="4Fq-ZF-8sE"/>
                                     <action selector="TapLogOff:" destination="zwY-YH-vBc" eventType="touchUpInside" id="bVz-5A-unP"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Ht5-oF-IhE"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="LogOff" id="Ht5-oF-IhE"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="gj7-hr-KgH">
@@ -80,7 +80,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="8Jk-xr-0eh" kind="show" id="cdL-X5-XBq"/>
+                                            <segue destination="8Jk-xr-0eh" kind="show" identifier="" id="cdL-X5-XBq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNe-3p-tDG">
@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="957.60000000000002" y="-135.38230884557723"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller3-->
         <scene sceneID="7i2-sP-5IH">
             <objects>
-                <viewController id="8Jk-xr-0eh" sceneMemberID="viewController">
+                <viewController id="8Jk-xr-0eh" customClass="ViewController3" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nhf-8M-nbh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bmd-fp-qyl" kind="show" id="FNa-Nb-SFo"/>
+                                    <segue destination="Bmd-fp-qyl" kind="show" identifier="" id="FNa-Nb-SFo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="1748" y="-135.38230884557723"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller4-->
         <scene sceneID="rcl-3s-k1x">
             <objects>
-                <viewController id="Bmd-fp-qyl" sceneMemberID="viewController">
+                <viewController id="Bmd-fp-qyl" customClass="ViewController4" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zfb-dq-J2D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,7 +209,7 @@
                                 <rect key="frame" x="20" y="40" width="39" height="27"/>
                                 <state key="normal" title="Menu"/>
                                 <connections>
-                                    <segue destination="8Jk-xr-0eh" kind="show" id="8uC-bi-ZoR"/>
+                                    <segue destination="8Jk-xr-0eh" kind="show" identifier="" id="8uC-bi-ZoR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3p1-Y9-9fa">
@@ -297,7 +297,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8uC-bi-ZoR"/>
-        <segue reference="AZ8-bK-rIR"/>
+        <segue reference="cdL-X5-XBq"/>
+        <segue reference="Hbw-Pf-KlR"/>
     </inferredMetricsTieBreakers>
 </document>
