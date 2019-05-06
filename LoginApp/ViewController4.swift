@@ -45,6 +45,16 @@ class ViewController4: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is ResultsView
+        {
+            let user = Auth.auth().currentUser
+            let temp = segue.destination as? ResultsView
+            temp?.name = user?.displayName ?? "unknown"
+            temp?.score = score
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         newQuestion()
     }
