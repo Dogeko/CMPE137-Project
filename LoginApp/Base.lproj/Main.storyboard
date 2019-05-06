@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.59" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.45"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -103,6 +103,9 @@
                                         <state key="normal" title="Profile">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="uI6-AC-FPk" kind="show" id="Kkp-4U-kVa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -135,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="956.52173913043487" y="-135.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller5-->
         <scene sceneID="tY0-de-W2u">
             <objects>
-                <viewController id="uI6-AC-FPk" sceneMemberID="viewController">
+                <viewController id="uI6-AC-FPk" customClass="ViewController5" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xq6-0u-vJ9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,6 +245,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wLm-ih-VVX"/>
                     </view>
+                    <connections>
+                        <outlet property="EmailLabel" destination="sxX-Wh-deb" id="UwB-PG-0Ti"/>
+                        <outlet property="UserLabel" destination="BT4-NW-Rlp" id="4mM-CO-US3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOI-b2-x5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -507,7 +514,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lyV-q7-R32"/>
+        <segue reference="cdL-X5-XBq"/>
         <segue reference="Ain-8C-Wng"/>
     </inferredMetricsTieBreakers>
 </document>
