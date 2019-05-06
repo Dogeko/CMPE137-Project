@@ -18,7 +18,8 @@ class ViewController4: UIViewController {
     var currentQuestion = 0
     var correctAnswerPlacement:UInt32 = 0
     var score = 0
-    
+    var ref:DatabaseReference!
+
     @IBOutlet weak var QuestionLabel: UILabel!
     
     @IBOutlet weak var QuestionNumber: UILabel!
@@ -39,6 +40,20 @@ class ViewController4: UIViewController {
             newQuestion()
         }
         else{
+            let user = Auth.auth().currentUser
+            ref = Database.database().reference(fromURL: "https://loginapp-4acd8.firebaseio.com/")
+            //        scoreRef=Database.database().reference().child()
+//            let ref = Database.database().reference()
+            ref.child((user?.uid)!).setValue(["Score":score]){
+                (error:Error?, ref:DatabaseReference) in
+                if let error = error{
+                    print("Can no save data:\(error)")
+                }
+                else{
+                    print("yatta")
+                }
+            }
+
             performSegue(withIdentifier: "FinalScore", sender: self)
             
         }
