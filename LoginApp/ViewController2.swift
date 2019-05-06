@@ -13,6 +13,10 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //testing
+        let user = Auth.auth().currentUser
+        print(user?.displayName ?? "unknown")
+        print(user?.email ?? "unknown")
     }
 
     @IBAction func TapLogOff(_ sender: UIButton) {

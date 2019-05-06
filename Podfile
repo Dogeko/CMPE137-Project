@@ -10,5 +10,6 @@ target 'LoginApp' do
   pod 'Firebase/Core'
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Email'
+  pod 'FirebaseUI/Database'
 
 end
