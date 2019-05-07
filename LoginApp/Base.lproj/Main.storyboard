@@ -212,6 +212,9 @@
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OVz-xz-mmp">
                                 <rect key="frame" x="20" y="555" width="374" height="287"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uI6-AC-FPk" id="6oM-4d-ofy"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -247,7 +250,9 @@
                     </view>
                     <connections>
                         <outlet property="EmailLabel" destination="sxX-Wh-deb" id="UwB-PG-0Ti"/>
+                        <outlet property="MapView" destination="OVz-xz-mmp" id="gH1-Xr-gtC"/>
                         <outlet property="UserLabel" destination="BT4-NW-Rlp" id="4mM-CO-US3"/>
+                        <outlet property="mapView" destination="OVz-xz-mmp" id="kpM-2N-9X1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOI-b2-x5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -518,7 +523,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lyV-q7-R32"/>
-        <segue reference="8ar-44-JO0"/>
+        <segue reference="cdL-X5-XBq"/>
+        <segue reference="Ain-8C-Wng"/>
     </inferredMetricsTieBreakers>
 </document>
