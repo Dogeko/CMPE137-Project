@@ -311,6 +311,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="18e-zn-xL9"/>
                     </view>
+                    <connections>
+                        <outlet property="quizPicker" destination="f8q-GJ-7rD" id="fbg-Bo-gbF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ux4-8O-QCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -518,7 +521,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lyV-q7-R32"/>
-        <segue reference="8ar-44-JO0"/>
+        <segue reference="FNa-Nb-SFo"/>
+        <segue reference="zqy-rt-NIA"/>
+        <segue reference="AZ8-bK-rIR"/>
     </inferredMetricsTieBreakers>
 </document>
