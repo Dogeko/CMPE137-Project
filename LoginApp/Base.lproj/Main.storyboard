@@ -20,16 +20,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="0Zf-gC-BfL">
-                                <rect key="frame" x="145.5" y="403" width="123" height="90.5"/>
+                                <rect key="frame" x="159" y="394" width="96.5" height="108.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LoginApp Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tU-PG-WGO">
-                                        <rect key="frame" x="0.0" y="0.0" width="123" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiznite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tU-PG-WGO">
+                                        <rect key="frame" x="0.0" y="0.0" width="96.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXv-8N-FhH">
-                                        <rect key="frame" x="42.5" y="60.5" width="38" height="30"/>
+                                        <rect key="frame" x="23.5" y="72.5" width="49" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="TapLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P6I-xk-ftd"/>
@@ -316,6 +317,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="18e-zn-xL9"/>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="f8q-GJ-7rD" id="Pgz-5N-gfb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ux4-8O-QCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -524,6 +528,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cdL-X5-XBq"/>
-        <segue reference="Ain-8C-Wng"/>
+        <segue reference="Hbw-Pf-KlR"/>
     </inferredMetricsTieBreakers>
 </document>
