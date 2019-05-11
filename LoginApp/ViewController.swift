@@ -14,14 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //database stuff not used yet
-        var ref:DatabaseReference!
-        ref = Database.database().reference(fromURL: "https://loginapp-4acd8.firebaseio.com/")
         let user = Auth.auth()
-        if user.currentUser != nil {
-            print("in")    } else {
-            print("out")
-        }
     }
     
 

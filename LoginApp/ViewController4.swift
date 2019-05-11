@@ -10,7 +10,7 @@ import UIKit
 import FirebaseUI
 class ViewController4: UIViewController {
     
-    let  SpaceQuiz = ["How many moons does Jupiter have?", "What is the brightest star in the Big Dipper?", "Approximately, what is the radius of the Earth at the equator?", "Which planets do not have a moon?", "when was the rover, Opportunity, decommissioned?", "what year was the last manned Moon landing?", "What is the name of NASAs first space shuttle?", "Who was the second person to walk on the moon?", "what was the first animal in space?", "What is the densest planet in our solar system?"]
+    let  SpaceQuiz = ["How many moons does Jupiter have?", "What is the brightest star in the Big Dipper?", "Approximately, what is the radius of the Earth at the equator?", "Which planets do not have a moon?", "When was the rover, Opportunity, decommissioned?", "What year was the last manned Moon landing?", "What is the name of NASAs first space shuttle?", "Who was the second person to walk on the moon?", "What was the first animal in space?", "What is the densest planet in our solar system?"]
     
     let SpaceQuizAnswers = [["79","60","0","53"],["Alioth","Megrez","Merak","Alkaid"],["3,963 miles","3,959 miles","1,079 miles","6,378 miles"], ["Mercury and Venus","Pluto and Jupiter","Venus and Pluto", "Neptune and Jupiter"],["2018", "1993", "2005", "2011"],["1972","1969","1970","1976"],["Enterprise","Discovery","Columbia","Galileo"],["Buzz Aldrin","Neil Armstrong","Pete Conrad","Alan Bean"],["fruit fly","rhesus monkey","dog","cat"],["Earth","Neptune","Mercury","Jupiter"]]
     
@@ -42,15 +42,13 @@ class ViewController4: UIViewController {
         else{
             let user = Auth.auth().currentUser
             ref = Database.database().reference(fromURL: "https://loginapp-4acd8.firebaseio.com/")
-            //        scoreRef=Database.database().reference().child()
-//            let ref = Database.database().reference()
             ref.child((user?.uid)!).setValue(["Score":score]){
                 (error:Error?, ref:DatabaseReference) in
                 if let error = error{
                     print("Can no save data:\(error)")
                 }
                 else{
-                    print("yatta")
+                    print("Data was saved")
                 }
             }
 
